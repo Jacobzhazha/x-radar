@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "X 起量雷达",
+  "version": "1.0.0",
+  "description": "在 X 时间线、搜索结果和主页上标记正在起量的帖子：显示发出时长、浏览数和每分钟增速。只读页面，不发起任何网络请求，不上传任何数据。",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["*://x.com/*", "*://twitter.com/*"],
+      "js": ["radar-core.js", "content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "X 起量雷达"
+  }
+}

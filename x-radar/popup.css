@@ -1,0 +1,55 @@
+body {
+  width: 260px;
+  margin: 0;
+  padding: 14px;
+  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 13px;
+  color: #0f1419;
+  background: #fff;
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: 15px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.row input[type="number"] {
+  width: 90px;
+  padding: 4px 6px;
+  border: 1px solid #cfd9de;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.switch-row input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #f91880;
+}
+
+.hint {
+  margin: 4px 0 10px;
+  font-size: 11px;
+  color: #536471;
+}
+
+.count {
+  padding: 8px;
+  border-radius: 6px;
+  background: #eff3f4;
+  font-weight: 600;
+}
+
+.saved {
+  height: 14px;
+  margin-top: 6px;
+  font-size: 11px;
+  color: #00ba7c;
+}

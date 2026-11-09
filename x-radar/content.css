@@ -1,0 +1,26 @@
+/* X 起量雷达：所有样式都带 x-radar 前缀，避免影响 X 自身样式 */
+
+.x-radar-tag {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 0 6px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 18px;
+  white-space: nowrap;
+  vertical-align: middle;
+  color: #71767b;
+  background-color: rgba(113, 118, 123, 0.15);
+}
+
+.x-radar-tag.x-radar-tag-hot {
+  color: #f91880;
+  background-color: rgba(249, 24, 128, 0.12);
+}
+
+article.x-radar-hot {
+  outline: 3px solid #f91880 !important;
+  outline-offset: -3px;
+  border-radius: 12px;
+}

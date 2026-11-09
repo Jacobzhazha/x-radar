@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>X 起量雷达</h1>
+
+  <label class="row switch-row">
+    <span>总开关</span>
+    <input type="checkbox" id="enabled">
+  </label>
+
+  <label class="row">
+    <span>浏览数阈值</span>
+    <input type="number" id="viewThreshold" min="0" step="1">
+  </label>
+
+  <label class="row">
+    <span>分钟数阈值</span>
+    <input type="number" id="minuteThreshold" min="1" step="1">
+  </label>
+
+  <p class="hint">浏览数 ≥ 阈值 且发出不到阈值分钟的帖子会被描边。修改后自动保存。</p>
+
+  <div id="count" class="count">当前页面描边：…</div>
+  <div id="saved" class="saved"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
